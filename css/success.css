@@ -1,0 +1,72 @@
+.header-options img {
+  width: 100%;
+}
+.stories {
+  text-align: center;
+  border-bottom: 1px solid grey;
+  padding: 40px 20px 80px;
+}
+.swipe-section {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.swipe-section .option {
+  width: 30%;
+}
+.circle{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #fdc43a;
+  margin: 0 auto;
+}
+.different-color {
+  background-color: grey;
+}
+.swipe-dots {
+  display: flex;
+  flex-flow: row;
+  justify-content:space-around;
+  width: 100px;
+  margin: 20px auto 0;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: lightgrey;
+}
+.one {
+  background-color: #fdc43a;
+}
+
+/*------------------------------------------------------------------------------
+    Media Queries
+------------------------------------------------------------------------------*/
+@media  (max-width:767px) and (orientation:portrait) {
+  .header-options {
+    flex-flow: column;
+  }
+  .header-options .holder {
+    width: 100%;
+  }
+  .swipe-section {
+    flex-flow: column;
+  }
+  .swipe-section .option {
+    width: 100%;
+  }
+}
+
+@media  (max-width:767px) and (orientation:landscape) {
+  
+}
+
+@media  (max-width:1024px) and (orientation:portrait) {
+
+}
+
+@media  (max-width:1024px) and (orientation:landscape) {
+
+}

@@ -1,0 +1,127 @@
+header {
+  background-color: #3b5998;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header.home {
+  background-image: url(../img/SOR_6461.jpg);
+}
+header.gym {
+  background-image: url(../img/levelground2.jpg);
+}
+header.away {
+  background-image: url(../img/LG1_8170.jpg);
+}
+header.donate {
+  background-image: url(../img/SOR_6496.jpg);
+}
+header.tracks p, header.tracks h1, header.tracks nav a, header.tracks h3{
+  color: #fff;
+}
+.header-options {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+nav {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto 15px;
+  display: flex!important;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  align-items: center;
+  -webkit-align-items: center;
+  padding-top: 10px;
+}
+nav ul{
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  padding-left: 0;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav img {
+  width: 100px;
+  height: auto;
+}
+
+header a {
+  text-decoration: none;
+  color: #fdc43a;
+
+}
+header button, nav button {
+  background-color: #fdc43a;
+  color: #fff;
+}
+nav button {
+  max-height: 30px;
+  max-width: 80px;
+  font-size: 10px;
+  border-radius: 8px;
+}
+nav button a {
+  color: #fff;
+}
+header .wrapper button a{
+  color: #fff;
+}
+header p {
+  margin-bottom: 40px;
+  color: #fdc43a;
+}
+/*#flag {
+  width: 110px;
+  height: 56px;
+  padding-top: 15px;
+  position: relative;
+  background: #fdc43a;
+  color: transparent;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+#flag:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid #fdc43a;
+}*/
+
+
+/*-----------------------------------------------------------------------------
+  My Media Queries
+-----------------------------------------------------------------------------*/
+
+@media  (max-width:767px) and (orientation:portrait) {
+  header .wrapper p{
+    text-align: left;
+  }
+}
+
+@media  (max-width:767px) and (orientation:landscape) {
+
+}
+
+@media  (max-width:1024px) and (orientation:portrait) {
+
+}
+
+@media  (max-width:1024px) and (orientation:landscape) {
+
+}

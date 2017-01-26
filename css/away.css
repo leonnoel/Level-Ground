@@ -1,0 +1,44 @@
+.duel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding: 100px;
+}
+.duel h2 {
+  width: 100%;
+}
+.duel section {
+  width: 45%;
+}
+
+
+/* ==========================================================================
+   Media Query
+   ========================================================================== */
+
+
+@media  (max-width:767px) and (orientation:portrait) {
+  .duel section {
+    width: 100%;
+  }
+  .duel {
+    padding: 0;
+  }
+}
+
+@media  (max-width:767px) and (orientation:landscape) {
+  .duel section {
+    width: 100%;
+  }
+}
+
+@media  (max-width:1024px) and (orientation:portrait) {
+  .duel {
+    padding: 0;
+  }
+}
+
+@media  (max-width:1024px) and (orientation:landscape) {
+
+}
