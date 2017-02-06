@@ -2,15 +2,28 @@
   width: 100%;
   padding: 50px;
   display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
   align-content: center;
+  -webkit-align-content: center;
 }
 .gym-schedule section, .testimonial-section section {
   width: 45%;
   display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
   justify-content: space-between;
+  -webkit-justify-content: space-between;
 }
 .gym-schedule h2, .gym-schedule p {
   width: 100%;
@@ -58,8 +71,14 @@
 .sponsorship {
   text-align: center;
   display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
   justify-content: center;
+  -webkit-justify-content: center;
 }
 .sponsor {
   width: 150px;
@@ -83,12 +102,15 @@
   }
   .gym-schedule {
     flex-flow: column;
+    -webkit-flex-flow:column;
   }
   .testimonial-section, .gym-schedule.reverse {
     flex-flow: column-reverse;
+    -webkit-flex-flow:column-reverse;
   }
   .gym-schedule.second, .testimonial-section.second {
     flex-flow: column;
+    -webkit-flex-flow:column;
   }
   .sponsor {
     margin: 10px auto;
@@ -111,12 +133,17 @@
   }
   .gym-schedule {
     flex-flow: column;
+    -webkit-flex-flow:column;
+
   }
   .testimonial-section, .gym-schedule.reverse {
     flex-flow: column-reverse;
+    -webkit-flex-flow:column-reverse;
   }
   .gym-schedule.second, .testimonial-section.second {
     flex-flow: column;
+    -webkit-flex-flow:column;
+
   }
 }
 
@@ -130,12 +157,18 @@
   }
   .gym-schedule {
     flex-flow: column;
+    -webkit-flex-flow:column;
+
   }
   .testimonial-section, .gym-schedule.reverse {
     flex-flow: column-reverse;
+    -webkit-flex-flow:column-reverse;
+
   }
   .gym-schedule.second, .testimonial-section.second {
     flex-flow: column;
+    -webkit-flex-flow:column;
+
   }
 }
 
