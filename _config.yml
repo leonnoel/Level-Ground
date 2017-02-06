@@ -32,3 +32,13 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Forestry Settings
+defaults:
+  - scope:
+        path: ""
+        type: posts
+    values:
+        thumbnail: ""
+        categories: []
+        description: ""
