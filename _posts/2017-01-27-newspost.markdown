@@ -3,4 +3,6 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2017-01-27 10:00:39 -0500
 categories: newspost
+author: Frederick Douglass
 ---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tortor leo, mattis et sollicitudin id, ultricies sed nibh. In aliquam libero eget sem vehicula efficitur. Praesent nec tortor consectetur, ornare purus eget, pellentesque arcu. Nam blandit eros quis tempor suscipit. Suspendisse lobortis id lectus maximus vestibulum. Pellentesque ante turpis, dignissim nec consectetur at, scelerisque at lacus. Donec nisl quam, fringilla in felis quis, sodales pulvinar urna. Donec et purus felis. Aenean nec mi at sapien egestas porta. Sed posuere bibendum odio et tincidunt. Suspendisse mattis non arcu id accumsan. Nullam in pretium nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis imperdiet porttitor.

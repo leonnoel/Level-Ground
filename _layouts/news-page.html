@@ -21,11 +21,12 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <header class="away">
+        <header class="donate">
           <nav>
             <ul>
-              <a href="gym.html"><li>Classes</li></a>
-              <a href="#"><li>Hire Us</li></a>
+              <a href="classes.html"><li>Classes</li></a>
+              <a href="hire.html"><li>Hire Us</li></a>
+              <a href="news.html"><li>News</li></a>
             </ul>
             <a href="index.html"><img src="img/new-logo-white.png" alt=""></a>
             <!-- <div id="flag">
@@ -34,46 +35,63 @@
             <button type="button" name="donate-button"><a href="donate.html">DONATE</a></button>
           </nav>
           <div class="wrapper">
-            <h1>We Come To You</h1>
-            <h3>Hire us today to come to your office or school. Your employees will leave the workout feeling great and ready to take on the remainder of the work day.</h3>
-            <a href="#">
-              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
-              Watch the Video</a>
+            <h1>News</h1>
           </div>
         </header>
-        <section class="wrapper common">
-          <section class="duel">
-            <h2>We Offer Two Different Classes</h2>
-            <section class="option">
-              <div class="circle">
-
-              </div>
-              <h3>Boxing Bootcamp</h3>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+        <section>
+          <div class="newswrapper">
+            <section class="multi-post">
+              {% for post in site.categories.newspost %}
+                <div class="post">
+                  {{post.content}}
+                  <section class="author-date">
+                    <span><i class="fa fa-user" aria-hidden="true"></i>{{post.author}}</span>
+                    <span><i class="fa fa-clock-o" aria-hidden="true"></i>{{post.date}}</span>
+                  </section>
+                </div>
+              {% endfor %}
             </section>
-            <section class="option">
-              <div class="circle">
-
-              </div>
-              <h3>Boxing Bootcamp</h3>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+            <section class="post-links">
+              <h4>Recent Posts</h4>
+              <ul>
+                <a href="#"><li>2016 Year-End Campaign: Let's build the first free, youth-managed MMA gym!</li></a>
+                <a href="#"><li>Coming in January 2017: Level Ground Training Center</li></a>
+                <a href="#"><li>LG Student Trainers head to Fall Internships!</li></a>
+                <a href="#"><li>LG Student wins second MMA competition</li></a>
+                <a href="#"><li>LG Students head to Ukraine through State Department-funded initiative</li></a>
+              </ul>
+              <h4>Archive</h4>
+              <ul>
+                <a href="#"><li>November 2016</li></a>
+                <a href="#"><li>September 2016</li></a>
+                <a href="#"><li>August 2016</li></a>
+                <a href="#"><li>June 2016</li></a>
+                <a href="#"><li>May 2016</li></a>
+                <a href="#"><li>April 2016</li></a>
+                <a href="#"><li>February 2016</li></a>
+                <a href="#"><li>December 2015</li></a>
+                <a href="#"><li>November 2015</li></a>
+                <a href="#"><li>October 2015</li></a>
+                <a href="#"><li>April 2015</li></a>
+                <a href="#"><li>February 2015</li></a>
+                <a href="#"><li>January 2015</li></a>
+                <a href="#"><li>December 2014</li></a>
+                <a href="#"><li>September 2014</li></a>
+                <a href="#"><li>August 2014</li></a>
+                <a href="#"><li>July 2014</li></a>
+              </ul>
+              <h4>Categories</h4>
+              <ul>
+                <a href="#"><li>Competition</li></a>
+                <a href="#"><li>Motivational</li></a>
+                <a href="#"><li>Organizations</li></a>
+                <a href="#"><li>People</li></a>
+                <a href="#"><li>Success</li></a>
+                <a href="#"><li>Uncategorized</li></a>
+                <li><a href="#">Uplifting</a></li>
+              </ul>
             </section>
-          </section>
-          <button type="button" name="button">Book A Class</button>
-        </section>
-        <section class="testimonial-section change-background-color">
-          <section>
-            <h2>Testimonial Name</h2>
-            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-            <button type="button" name="button">Book A Class</button>
-          </section>
-          <section class="testimonial-img">
-            <img src="img/levelground2.jpg" alt="">
-          </section>
-        </section>
-        <section class="common">
-          <h2>Want to kick it up a notch?</h2>
-          <button type="button" name="button">Book a Class</button>
+          </div>
         </section>
         <footer>
           <div>
@@ -84,8 +102,8 @@
             </section>
             <h6>Site Map</h6>
             <ul>
-              <li><a href="gym.html">Classes</a></li>
-              <li>Hire Us</li>
+              <li><a href="classes.html">Classes</a></li>
+              <li><a href="hire.html">Hire Us</a></li>
             </ul>
             <h6>Contribute</h6>
             <ul>
