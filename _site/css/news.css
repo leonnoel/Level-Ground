@@ -1,6 +1,11 @@
 .newswrapper {
   display: flex;
-  flex-flow: row-wrap;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow:row wrap;
   justify-content: space-between;
 }
 .single-post {
@@ -40,15 +45,27 @@
 }
 .inline-form {
   display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   flex-flow: row;
+  -webkit-flex-flow: row;
   justify-content: space-between;
+  -webkit-justofy-content:space-between;
   margin: 20px 0;
 }
 .author-date {
   display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
   flex-flow: row;
   width: 350px;
   justify-content: space-between;
+  -webkit-flex-flow: row;
+  -webkit-justofy-content:space-between;
 }
 .author-date span {
   color: grey;
@@ -76,12 +93,14 @@
   }
   .author-date {
     flex-flow: column;
+    -webkit-flex-flow: column;
   }
   .author-date span{
     width: 70%;
   }
   .inline-form {
     flex-flow: column;
+    -webkit-flex-flow: column;
   }
   .comment > textarea {
     columns: 50;
