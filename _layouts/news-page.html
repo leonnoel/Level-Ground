@@ -41,45 +41,15 @@
         <section>
           <div class="newswrapper">
             <section class="multi-post">
-              <div class="post">
-                <h2>2016 Year-End Campaign: Let's Build the first free, youth-managed MMA gym!</h2>
-                <p>Because of your support, Level Ground will open our Athletic, Academic, and job Training Center in January 2017! The Training Center will also provide free &amp; affordable Personal Training and MMA classes to all Boston residents, no matter income.</p>
-                <p>Youth will serve as our Personal Trainers, Fitness Instructors, and Managers!</p>
-                <p>Check out this video to see what the Training Center will look like in action!</p>
-                <p>The LG Training Center will include 2,700 sq. feet of mat space for athletics, the Beat 58 Personal Training Studio, and our Academic and job Training Classroom.</p>
-                <p>LG aims to raise $35,000($20K online, $15K offline) by mid-January. Funds will go towards vital equipment and renovations as well as wages for our Student Trainers. Between our online and offline donations as of 11/22/2016, we have already reached 40% of this goal!</p>
-                <p>With your help, the LG Training Center will serve hundreds of more young people through our wraparound services. Together, we will also empower our Student Trainers to become fitness leaders in their community and address key health disparities in urban Boston.</p>
-                <section class="author-date">
-                  <span><i class="fa fa-user" aria-hidden="true"></i>Ali Fuller</span>
-                  <span><i class="fa fa-clock-o" aria-hidden="true"></i>November 22nd, 2016</span>
-                </section>
-              </div>
-              <div class="post">
-                <h2>2016 Year-End Campaign: Let's Build the first free, youth-managed MMA gym!</h2>
-                <p>Because of your support, Level Ground will open our Athletic, Academic, and job Training Center in January 2017! The Training Center will also provide free &amp; affordable Personal Training and MMA classes to all Boston residents, no matter income.</p>
-                <p>Youth will serve as our Personal Trainers, Fitness Instructors, and Managers!</p>
-                <p>Check out this video to see what the Training Center will look like in action!</p>
-                <p>The LG Training Center will include 2,700 sq. feet of mat space for athletics, the Beat 58 Personal Training Studio, and our Academic and job Training Classroom.</p>
-                <p>LG aims to raise $35,000($20K online, $15K offline) by mid-January. Funds will go towards vital equipment and renovations as well as wages for our Student Trainers. Between our online and offline donations as of 11/22/2016, we have already reached 40% of this goal!</p>
-                <p>With your help, the LG Training Center will serve hundreds of more young people through our wraparound services. Together, we will also empower our Student Trainers to become fitness leaders in their community and address key health disparities in urban Boston.</p>
-                <section class="author-date">
-                  <span><i class="fa fa-user" aria-hidden="true"></i>Ali Fuller</span>
-                  <span><i class="fa fa-clock-o" aria-hidden="true"></i>November 22nd, 2016</span>
-                </section>
-              </div>
-              <div class="post">
-                <h2>2016 Year-End Campaign: Let's Build the first free, youth-managed MMA gym!</h2>
-                <p>Because of your support, Level Ground will open our Athletic, Academic, and job Training Center in January 2017! The Training Center will also provide free &amp; affordable Personal Training and MMA classes to all Boston residents, no matter income.</p>
-                <p>Youth will serve as our Personal Trainers, Fitness Instructors, and Managers!</p>
-                <p>Check out this video to see what the Training Center will look like in action!</p>
-                <p>The LG Training Center will include 2,700 sq. feet of mat space for athletics, the Beat 58 Personal Training Studio, and our Academic and job Training Classroom.</p>
-                <p>LG aims to raise $35,000($20K online, $15K offline) by mid-January. Funds will go towards vital equipment and renovations as well as wages for our Student Trainers. Between our online and offline donations as of 11/22/2016, we have already reached 40% of this goal!</p>
-                <p>With your help, the LG Training Center will serve hundreds of more young people through our wraparound services. Together, we will also empower our Student Trainers to become fitness leaders in their community and address key health disparities in urban Boston.</p>
-                <section class="author-date">
-                  <span><i class="fa fa-user" aria-hidden="true"></i>Ali Fuller</span>
-                  <span><i class="fa fa-clock-o" aria-hidden="true"></i>November 22nd, 2016</span>
-                </section>
-              </div>
+              {% for post in site.categories.newspost %}
+                <div class="post">
+                  {{post.content}}
+                  <section class="author-date">
+                    <span><i class="fa fa-user" aria-hidden="true"></i>{{post.author}}</span>
+                    <span><i class="fa fa-clock-o" aria-hidden="true"></i>{{post.date}}</span>
+                  </section>
+                </div>
+              {% endfor %}
             </section>
             <section class="post-links">
               <h4>Recent Posts</h4>
